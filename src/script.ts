@@ -1,16 +1,18 @@
 import puppeteer, { Page } from 'puppeteer';
-import dappeteer from '@chainsafe/dappeteer';
+// import dappeteer from '@chainsafe/dappeteer';
+const dappeteer = require("@chainsafe/dappeteer");
+
 import fs from 'fs';
 
-const collectionName = "Your Collection Name"
+const collectionName = "TestCollection"
 
-const collectionURL = `https://opensea.io/${collectionName}/asset/create`
+const collectionURL = `https://testnets.opensea.io/${collectionName}/asset/create`
 
-const openseaDescription = `Your description here`
+const openseaDescription = `Testing Collection`
 
 const lockedContent = `Locked content text here`
 
-const secretPhase = `here is your secret phase dont share it`
+const secretPhase = `rose rent salute fall swallow session gain unhappy cable sentence bonus uncle`
 
 const connectWallet = async (page: Page, metamask) => {
   const button = await page.$('button.dBFmez:first-child');
@@ -66,7 +68,7 @@ const fillFields = async (page: Page, fileName: string) => {
 }
 
 (async () => {
-  const browser = await dappeteer.launch(puppeteer, { metamaskVersion: 'v10.1.1' });
+  const browser = await dappeteer.launch(puppeteer, { metamaskVersion: 'v10.12.4' });
   const metamask = await dappeteer.setupMetamask(browser, { seed: secretPhase});
   const files = await fs.promises.readdir("images/");
   files.shift()

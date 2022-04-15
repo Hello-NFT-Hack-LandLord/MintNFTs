@@ -4,13 +4,16 @@
   "main": "index.js",
   "license": "MIT",
   "dependencies": {
-    "@chainsafe/dappeteer": "^2.2.0",
+    "@chainsafe/dappeteer": "^2.4.1",
     "dappeteer": "^1.0.0",
-    "esbuild": "^0.13.10",
-    "esbuild-register": "^3.0.0",
-    "puppeteer": "^10.4.0"
+    "esbuild": "^0.14.36",
+    "esbuild-register": "^3.3.2",
+    "puppeteer": "^13.5.2"
   },
   "scripts": {
     "es": "node -r esbuild-register"
+  },
+  "devDependencies": {
+    "@types/node": "^17.0.24"
   }
 }

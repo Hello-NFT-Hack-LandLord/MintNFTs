@@ -1,5 +1,9 @@
 # Opensea BULK Script #
 
+This is repository has been cloned and modified a little bit to fit to our needs
+The original repo is [OpenSeaScript](https://github.com/EmanuelCampos/opensea-script.git)
+
+
 ## :computer: About the project
 
 This project was made to mint so many NFTs to the opensea using puppeteer and dappeteer.
@@ -40,3 +44,12 @@ yarn es ./src/script.ts
 
 | [<img src="https://avatars2.githubusercontent.com/u/16262455?s=115&v=3"><br><sub>@EmanuelCampos</sub>](https://github.com/EmanuelCampos) |
 | :------------------------------------------------------------------------------------------------------------------------------: |
+
+
+yarn es ./src/script.ts
+
+yarn add @chainsafe/dappeteer puppeteer esbuild esbuild-register
+yarn install
+yarn
+npm install --global yarn
+
